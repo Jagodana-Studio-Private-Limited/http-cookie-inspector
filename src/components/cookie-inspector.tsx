@@ -306,7 +306,7 @@ export function CookieInspector() {
                           <p className="text-xs text-muted-foreground">{label}</p>
                         </div>
                         <p className="text-sm font-mono break-all flex-1">{value}</p>
-                        {(label === "Name" || label === "Value") && <CopyButton text={value} />}
+                        {(label === "Name" || label === "Value") && <CopyButton text={value ?? ""} />}
                       </div>
                     ))}
                   </div>
